@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0 bs=1 seek=13107717 count=1");
        break;
 
-      case "m6 note":
+      case "M6 Note":
        sudo("dd if=/dev/block/mmcblk0p50 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0p50 bs=1 seek=515 count=1");
        break;
