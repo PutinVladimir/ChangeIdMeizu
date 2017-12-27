@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
       case "M6 Note":
        sudo("dd if=/dev/block/mmcblk0p50 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0p50 bs=1 seek=515 count=1");
-       sudo("echo -e '1' | dd of=/dev/block/mmcblk0p50 bs=1 seek=519 count=1");
+       sudo("echo -e '2' | dd of=/dev/block/mmcblk0p50 bs=1 seek=519 count=1");
        break;
 
       case "PRO 6":
@@ -70,6 +70,12 @@ public class MainActivity extends Activity {
        sudo("dd if=/dev/block/mmcblk0p4 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0 bs=1 seek=568885765 count=1");
        sudo("echo -e '1' | dd of=/dev/block/mmcblk0 bs=1 seek=568885769 count=1");
+       break;
+
+      case "MEIZU M6":
+       sudo("dd if=/dev/block/mmcblk0p8 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
+       sudo("echo -e '5' | dd of=/dev/block/mmcblk0p8 bs=1 seek=515 count=1");
+       sudo("echo -e '3' | dd of=/dev/block/mmcblk0p8 bs=1 seek=519 count=1");
        break;
 
       default:
