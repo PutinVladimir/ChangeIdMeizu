@@ -119,6 +119,14 @@ public class MainActivity extends Activity {
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0p28 bs=1 seek=517 count=1");
        break;
 
+      case "M5_MEIZU":
+       str = "You have G firmware installed already.";
+       break;
+
+      case "M6_MEIZU":
+       str = "You have G firmware installed already.";
+       break;
+
       default:
        str = "Unknown Meizu model. Id wasn't changed.";
        break;
