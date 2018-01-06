@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ru.meizu.changeid"
           versionCode="1"
-          versionName="0.3">
+          versionName="0.4">
     <uses-sdk android:minSdkVersion="21"/>
     <application android:label="Change Id Meizu"
                                      android:icon="@drawable/icon" >

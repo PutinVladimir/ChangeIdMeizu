@@ -94,6 +94,11 @@ public class MainActivity extends Activity {
        sudo("echo -e '2' | dd of=/dev/block/mmcblk0p8 bs=1 seek=519 count=1");
        break;
 
+      case "MX5":
+       sudo("dd if=/dev/block/mmcblk0p3 of=/storage/emulated/0/devinfo_backup_$(date +%Y-%m-%d).img");
+       sudo("echo -e '5' | dd of=/dev/block/mmcblk0 bs=1 seek=13107717 count=1");
+       break;
+
       case "MX6":
        sudo("dd if=/dev/block/mmcblk0p16 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0p16 bs=1 seek=517 count=1");
