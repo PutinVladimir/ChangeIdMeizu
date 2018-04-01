@@ -9,6 +9,8 @@ PRO 6(s)
 
 m2 note
 
+M2 mini
+
 M5 Note
 
 M6 Note
