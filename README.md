@@ -17,6 +17,8 @@ M6 Note
 
 M6
 
+M6s
+
 M5
 
 M5s
