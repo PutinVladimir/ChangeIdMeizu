@@ -2,8 +2,8 @@
 SOURCE=ru/meizu/changeid
 BASE=/usr/lib
 SDK="${BASE}/android-sdk"
-BUILD_TOOLS="${SDK}/build-tools/21.1.2"
-PLATFORM="${SDK}/platforms/android-21"
+BUILD_TOOLS="${SDK}/build-tools/23.0.3"
+PLATFORM="${SDK}/platforms/android-23"
 mkdir -p build/gen build/obj build/apk
 "${BUILD_TOOLS}/aapt" package -f -m -J build/gen/ -S res -M AndroidManifest.xml -I "${PLATFORM}/android.jar"
 javac -source 1.7 -target 1.7 -bootclasspath "${JAVA_HOME}/jre/lib/rt.jar" \
