@@ -135,6 +135,11 @@ public class MainActivity extends Activity {
        sudo("echo -e '5' | dd of=/dev/block/mmcblk0p28 bs=1 seek=517 count=1");
        break;
 
+      case "M15":
+       sudo("dd if=/dev/block/mmcblk0p21 of=/sdcard/devinfo_backup_$(date +%Y-%m-%d).img");
+       sudo("echo -e '5' | dd of=/dev/block/mmcblk0p21 bs=1 seek=517 count=1");
+       break;
+
       case "M5_MEIZU":
        str = "You have G firmware installed already.";
        break;
